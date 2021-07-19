@@ -8,5 +8,9 @@
             </div>
         </div>
     </div>
-    <div class="col">{{ shipsSizesToPlace }}</div>
+    <div class="col">
+        <ul>
+            <li *ngFor="let shipsSizeToPlace of shipsSizesToPlace">{{ shipsSizeToPlace }}</li>
+        </ul>
+    </div>
 </div>
